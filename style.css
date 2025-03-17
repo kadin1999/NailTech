@@ -1,0 +1,118 @@
+body {
+   background-image: url('L.J.M.png');
+}
+
+form {
+    margin: 20px auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 300px;
+}
+.login-container{
+    display: fixed;
+    justify-content: center;
+}
+.login-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Moves it to the bottom-left */
+    background-color: white;
+    padding: 8px; /* Slightly smaller padding */
+    border-radius: 6px; /* A bit less rounded */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 170px; /* Smaller width */
+}
+
+.login-box input {
+    width: 95%;
+    padding: 4px;
+    font-size: 10px; /* Smaller text */
+    margin: 3px 0;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 4px;
+    font-size: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+.admin-text {
+    font-size: 9px; /* Smaller text */
+    color: red;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#login-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#login-container input {
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#login-container button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#logout-button {
+    position: fixed;
+    bottom: 10px;
+    left: 280px;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#admin-notice {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}

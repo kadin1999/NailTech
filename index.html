@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Tech Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <div class="login-box">
+            <p class="admin-text">For admin login only, not for clients</p>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    
+      <div id="appointments-container" style="display: none;">
+        <h2>Booked Appointments</h2>
+        <ul id="appointment-list"></ul>
+      </div>
+      
+    <h1>Book an Appointment</h1>
+    
+    <!-- Form to add a new client -->
+    <form id="bookingForm">
+        <input type="text" id="clientName" placeholder="Client Name" required>
+        <label for="service">Select a Service:</label>
+        <select id="service" required>
+          <option value="manicure">Manicure</option>
+          <option value="pedicure">Pedicure</option>
+          <option value="gel-set">Gel Set</option>
+          <option value="nail-polish">Nail Polish</option>
+        </select>
+        
+        <input type="datetime-local" id="appointmentTime" required>
+        <button type="submit">Book Appointment</button>
+    </form>
+
+
+    <ul id="appointmentsList"></ul>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
